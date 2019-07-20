@@ -11,3 +11,14 @@ I created this as part of a coding challenge for a job interview. It uses Ruby. 
 > Once the specified rules have been implemented, suggest and implement an additional rule to demonstrate the ease with which the generator can be extended.
 
 I added the CurrentYearValidator, which checks the PIN isn't the same as the current year. The only existing compilation unit that would need re-auditing would be `code/pin_validators/pin_validators.rb`, and that more or less is just an array, so simple to review.
+
+## Running
+- Install ruby. I used v2.6.3.
+- Install bundler: `gem install bundler`
+- Run bundler: `bundle`
+- Run the code, and print out 15 random PINs using the following command:
+
+`ruby -Icode -I code/pin_validators code/challenge_runner.rb`
+
+## Tests
+- There is a test suite in the `test/` directory. You can use `guard` to run all of the tests.
