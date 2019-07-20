@@ -21,4 +21,4 @@ I added the CurrentYearValidator, which checks the PIN isn't the same as the cur
 `ruby -Icode -I code/pin_validators code/challenge_runner.rb`
 
 ## Tests
-- There is a test suite in the `test/` directory. You can use `guard` to run all of the tests.
+- There is a test suite in the `test/` directory. You can run the `guard` command to run all of the tests.
